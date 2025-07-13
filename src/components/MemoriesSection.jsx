@@ -27,35 +27,35 @@ const memories = [
 ];
 
 const MemoriesSection = () => {
-  return (
-    <div className="memory-section-wrapper" id="memories">
-      <h2 className="memories-title">Don't we look together so happy?</h2>
+	return (
+		<div className="memory-section-wrapper" id="memories">
+		<h2 className="memories-title">Don't we look together so happy?</h2>
 
-      <div className="memories-timeline">
-        {memories.map((memory, index) => (
-          <MemoryCard key={index} memory={memory} index={index} />
-        ))}
-      </div>
-    </div>
-  );
+		<div className="memories-timeline">
+			{memories.map((memory, index) => (
+			<MemoryCard key={index} memory={memory} index={index} />
+			))}
+		</div>
+		</div>
+	);
 };
 
 const MemoryCard = ({ memory, index }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
+	const ref = useRef(null);
+	const isInView = useInView(ref, { once: true, margin: '-100px' });
 
-  return (
-    <motion.div
-      ref={ref}
-      className="memory-card"
-      initial={{ opacity: 0, y: 50 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.8, delay: index * 0.2 }}
-    >
-      <img src={memory.src} alt={`Memory ${index + 1}`} />
-      <p>{memory.caption}</p>
-    </motion.div>
-  );
+	return (
+		<motion.div
+			ref={ref}
+			className="memory-card"
+			initial={{ opacity: 0, y: 50 }}
+			animate={isInView ? { opacity: 1, y: 0 } : {}}
+			transition={{ duration: 0.8, delay: index * 0.2 }}
+		>
+		<img src={memory.src} alt={`Memory ${index + 1}`} />
+		<p>{memory.caption}</p>
+		</motion.div>
+	);
 };
 
 export default MemoriesSection;
