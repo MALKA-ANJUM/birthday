@@ -15,10 +15,10 @@ import img12 from '../assets/pic12.jpeg';
 const memories = [
   { src: img2, caption: "Our first picture together!" },
   { src: img3, caption: "I think it all started from here.. hmm?" },
-  { src: img1, caption: "Not exactly.. From here??" },
+  { src: img1, caption: "Not exactly.. From here😄??" },
   { src: img11, caption: "This was the first bloom in the spring!" },
   { src: img5, caption: "And I can't find anything more cute than this!" },
-  { src: img6, caption: "This is the exact replica of US being US.. hehehhe!!" },
+  { src: img6, caption: "Don't you think?? this is the exact replica of US being US.. hehehhe!!" },
   { src: img9, caption: "And everybody zoomed in  here and i think, we got much closer after this!" },
   { src: img4, caption: "In the process... I luvvvv Icecream!!" },
   { src: img12, caption: "And will forever! And also adore him like this!!" },
