@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #fff0f5;
+  color: #333;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-family: 'Dancing Script', cursive;
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+.button {
+  padding: 12px 24px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  margin: 20px;
+  max-width: 300px;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card p {
+  padding: 15px;
+}
+.memory-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.popup-overlay h2, .popup-overlay p {
+  font-family: 'Open Sans', sans-serif;
+}
+.memories-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.memory-card {
+  width: 90%;
+  max-width: 700px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.memory-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.memory-card p {
+  padding: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: #fdf0f5;
+  color: #333;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+.hero-text-line {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+  margin: 15px 0;
+  animation: fadeInUp 1s ease both;
+}
+
+.hero-text-line.main {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  color: #fff0f5;
+  text-shadow: 2px 2px 4px #000;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&display=swap');
+
+.hero-section {
+  font-family: 'Indie Flower', cursive;
+  color: #fff;
+}
+
+.glass-card {
+  background: rgba(255, 192, 203, 0.15);
+  border: 1px solid rgba(255, 182, 193, 0.3);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(255, 105, 180, 0.3);
+  animation: glow 4s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #ffaad4;
+  }
+  100% {
+    box-shadow: 0 0 20px #ffc0cb;
+  }
+}
+
+.birthday-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: #ffe6f0;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #ff69b4;
+}
+
+.hero-text-line {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  color: #fffafc;
+  text-shadow: 1px 1px 2px #ff69b4;
+}
+
+.hero-text-line.main {
+  font-weight: bold;
+  color: #fff0f5;
+  font-size: 1.6rem;
+}
+
+.floating-heart {
+  font-size: 2rem;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.memory-section-wrapper {
+  text-align: center;
+  padding: 5rem 1rem;
+  background: linear-gradient(to bottom right, #ffe6f0, #ffc2d1);
+  font-family: 'Dancing Script', cursive;
+}
+
+.memories-title {
+  font-size: 2.5rem;
+  color: #d63384;
+  margin-bottom: 2rem;
+}
+
+
+.memory-card {
+  width: 90%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+}
+
+.memory-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.memory-card p {
+  font-size: 1.3rem;
+  color: #c2185b;
+}
